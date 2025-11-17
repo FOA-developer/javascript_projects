@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Coin-Flip game!!</h1>
+        <p>Let's begin the game.....guess if it's head or tail </p>
+        <button onclick="headButton();">Head</button>
+        <button onclick = "
+                      const randomNumber = Math.random();
+                      let result = ''
+                      if (randomNumber >= 0 && randomNumber <= 0.5){
+                        result = 'Heads';
+                        console.log(result);
+                        console.log(randomNumber);
+                        alert(result);
+                      }else{
+                        result = 'Tails';
+                        console.log(result);
+                        console.log(randomNumber);
+                        alert(result);
+                      }
+                      
+                      if ('Tails' === result){
+                        console.log(randomNumber);
+                        console.log('Youré a genius...you win')
+                      } else{
+                        console.log('Bad guess...you lose')
+                        console.log(randomNumber);
+                      }
+        ">Tail</button>
+    <script>
+        function headButton(){
+            const randomNumber = Math.random();
+                      let result = ''
+                      if (randomNumber >= 0 && randomNumber <= 0.5){
+                        result = 'Heads';
+                        console.log(result);
+                        alert(result);
+                        console.log(randomNumber);
+                      }else{
+                        result = 'Tails';
+                        console.log(result);
+                        alert(result);
+                        console.log(randomNumber);
+                      }
+                      
+                      if ('Heads' === result){
+                        console.log('Youré a genius...you win')
+                        console.log(randomNumber);
+                      } else{
+                        console.log('Bad guess...you lose')
+                        console.log(randomNumber);
+                      }
+        }
+    </script>
+</html>

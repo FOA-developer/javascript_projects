@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+.score{
+    width: 200px;
+    height: 36px;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 4px;
+    padding-left: 5px;
+}
+.button{
+    height: 30px;
+    width: 60px;
+    border-radius: 2px;
+    border-color: blue;
+}

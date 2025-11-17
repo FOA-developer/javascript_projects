@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-dark-color:rgb(83,62,38);
+    --secondary-dark-color: rgb(133,126,108);
+    --operator-dark-color: rgb(242,175,100);
+    --equal-button-color: rgb(245,173,42);
+    --background-dark-color: rgb(37,39,40);
+    --screen-dark-color:rgb(26,28,30);
+    --primary-light-color:rgb(244,206,159);
+    --secondary-light-color: rgb(252,228,170);
+    --operator-light-color: rgb(242,175,98);
+    --background-light-color: rgb(255,255,221);
+    --screen-light-color:rgb(255,240,211);
+    --main-icons-color:rgb(244,196,136);
+}
+body{
+    background-image: url(8369231c-7c77-40c4-88a8-a83d8f1a7873.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    width: 250px; 
+    display: flex;
+    flex-direction: column;
+}
+.screen-box{
+    background-color: var(--screen-dark-color);
+    height: 130px;
+    width: 250px;
+    border-bottom:2px solid white ;
+}
+.button-card{
+    height: 320px;
+    width: 250px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: var(--background-dark-color);
+}
+.buttons-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.button-row{
+    display: flex;
+    gap: 10px;
+}
+.other-button{
+    background-color: var(--secondary-dark-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+}
+.operator-button{
+    width: 50px; 
+    height: 50px;
+    background-color: var(--operator-dark-color);
+    border: none;
+    border-radius: 3px;
+}
+.button{
+    background-color: var(--primary-dark-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+}
+.equal-button{
+    background-color: var(--equal-button-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+}
