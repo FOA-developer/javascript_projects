@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link href="Rock-Paper.css" rel="stylesheet">
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="assets and styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <h1>Rock Paper Scissors</h1>
+        <p>Pick your choice and let's see who wins</p>
+      </div>
+      <div class="image-container">
         <div>
-            <h1></h1>
+          <button class="img-box js-rock"><img src="assets and styles/rock-removebg-preview.png" class="image rock"/></button>
         </div>
-    </body>
+        <div>
+          <button class="img-box js-paper" ><img src="assets and styles/paper-removebg-preview.png" class="image" /></button>
+        </div>
+        <div>
+          <button class="img-box js-scissors"><img src="assets and styles/scissors-removebg-preview.png" class="image" /></button>
+        </div>
+      </div>
+      <div class="result-box">
+        <h2 class="result"></h2>
+        <p class="moves">
+        </p>
+        <h2 class="score"></h2>
+        <div>
+          <button class="reset btn">Reset Scores</button>
+          <button class="reset auto-play">Auto Play</button>
+          <div class="display-info"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>

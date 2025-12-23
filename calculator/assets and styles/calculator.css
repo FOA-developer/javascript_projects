@@ -20,27 +20,48 @@
 body{
     background-image: url(8369231c-7c77-40c4-88a8-a83d8f1a7873.jpg);
     background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
+    background-position: center;
     background-repeat: no-repeat;
+}
+.body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 .box{
     display: flex;
-    justify-content: center;
+    justify-content: cente;
+    align-items: center;
     height: 450px;
     width: 250px; 
-    display: flex;
     flex-direction: column;
 }
 .screen-box{
     background-color: var(--screen-dark-color);
-    height: 130px;
+    height: 120px;
     width: 250px;
-    border-bottom:2px solid white ;
+    border-bottom: 2px solid white ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.theme-box{
+    height: 40px;
+
+}
+.input{
+    height: 60px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 215px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 48px;
+    letter-spacing: 1px;
+    resize: none;
+    outline: none;
 }
 .button-card{
     height: 320px;
@@ -48,6 +69,8 @@ body{
     padding-left: 5px;
     padding-right: 5px;
     background-color: var(--background-dark-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .buttons-box{
     display: flex;
@@ -55,36 +78,29 @@ body{
     justify-content: center;
     align-items: center;
     gap: 7px;
+    margin-top: 20px;
 }
 .button-row{
     display: flex;
     gap: 10px;
 }
-.other-button{
-    background-color: var(--secondary-dark-color);
-    width: 50px;
-    height: 50px;
-    border-radius: 3px;
-    border: none;
-}
-.operator-button{
-    width: 50px; 
-    height: 50px;
-    background-color: var(--operator-dark-color);
-    border: none;
-    border-radius: 3px;
-}
 .button{
-    background-color: var(--primary-dark-color);
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
     width: 50px;
     height: 50px;
-    border-radius: 3px;
-    border: none;
 }
-.equal-button{
+.other{
+    background-color: var(--secondary-dark-color);
+}
+.operator{
+    background-color: var(--operator-dark-color);
+}
+.numbers{
+    background-color: var(--primary-dark-color);
+}
+.equal{
     background-color: var(--equal-button-color);
-    width: 50px;
-    height: 50px;
-    border-radius: 3px;
-    border: none;
 }
