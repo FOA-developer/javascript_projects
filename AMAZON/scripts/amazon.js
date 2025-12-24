@@ -45,12 +45,23 @@ products.forEach((product) => {
     Added
   </div>
 
-  <button class="add-to-cart-button button-primary">
+  <button class="add-to-cart-button button-primary js-add-to-cart" data-product-name = "${product.name}" data-product-price = "${(product.priceCents/100).toFixed(2)}" data-product-image = "${product.image}">
     Add to Cart
   </button>
 </div>`;
 })
 
-console.log(productsHTML);
 
 document.querySelector('.products-grid').innerHTML = productsHTML;
+document.querySelectorAll('.js-add-to-cart').forEach(
+  (button) => {
+    button.addEventListener('click', () => {
+      button.textContent = 'Added'
+      cart.push({
+        name: button.dataset.productName,
+        price: button.dataset.productPrice,
+        image: button.dataset.productImage
+      })
+    });
+  }
+)
