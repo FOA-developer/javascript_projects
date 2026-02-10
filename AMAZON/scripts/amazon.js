@@ -45,7 +45,7 @@ products.forEach((product) => {
     Added
   </div>
 
-  <button class="add-to-cart-button button-primary js-add-to-cart" data-product-name = "${product.name}" data-product-price = "${(product.priceCents/100).toFixed(2)}" data-product-image = "${product.image}">
+  <button class="add-to-cart-button button-primary js-add-to-cart" data-product-name = "${product.name}" data-product-price = "${(product.priceCents/100).toFixed(2)}">
     Add to Cart
   </button>
 </div>`;
@@ -60,8 +60,9 @@ document.querySelectorAll('.js-add-to-cart').forEach(
       cart.push({
         name: button.dataset.productName,
         price: button.dataset.productPrice,
-        image: button.dataset.productImage
-      })
+        quanttiy : 1,
+      });
+      console.log(cart);
     });
   }
 )
