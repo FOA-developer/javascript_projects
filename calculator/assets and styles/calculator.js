@@ -11,7 +11,7 @@
     })
 
 // counts length in the screen
-  function countLength(){
+  const countLength = () => {
     let count = screen.value.length;
     if(count === 7){
       clearElement();
@@ -29,3 +29,49 @@
     screen.value = newValue;
   }
   document.querySelector('.clear').addEventListener('click', () => clearElement())
+
+//declaring operators
+const operators = ['+', '-', 'x', '/'];
+
+
+const key = document.querySelectorAll('.button');
+let firstValue = '';
+let secondValue = '';
+
+// tracking each button clicked
+  key.forEach((btn) => {
+    btn.addEventListener('click', (e) =>{
+      let tab = e.target.textContent;
+      PlacingValue(tab);
+      return tab;})
+  })
+
+
+  const PlacingValue = (tab) => {
+    const hasOperator = operators.filter((operator) => screen.value.includes(operator));
+      if(hasOperator.length === 0){
+        firstValue += tab;
+      }else{
+        const parts = screen.value.split(hasOperator[0]);
+        firstValue = Number(parts[0]);
+        secondValue = Number(parts[1]);
+        console.log(secondValue);
+      }
+  }
+
+// calculating the values
+  const calculate = () => {
+    const hasOperator = operators.filter((operator) => screen.value.includes(operator));
+    if(hasOperator[0] === '+'){
+      screen.value = firstValue + secondValue;
+    }else if (hasOperator[0] === '-'){
+      screen.value = firstValue - secondValue;
+    }else if (hasOperator[0] === 'x'){
+      screen.value = firstValue * secondValue;
+    }else if (hasOperator[0] === '/'){
+      screen.value = firstValue / secondValue;
+    }
+
+  }
+// invoking the calculate function when the equal button is clicked
+  document.querySelector('.equal').addEventListener('click', () => calculate())
