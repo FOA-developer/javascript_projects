@@ -146,6 +146,7 @@ const checkKey  = function(event){
 
  console.log(myArray);
 
+ 
 //objecs consurctors
 class person {
   constructor(first, last, age) {
