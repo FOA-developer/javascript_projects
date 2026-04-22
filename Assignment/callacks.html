@@ -3,15 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="assignment.css">
+  <title>Generate.io</title>
 </head>
 <body>
-  <label for="username">Username</label>
-  <input type="text" id="username" class="user" name="username">
-  <label for="password">Password</label>
-  <input type="password" id="password"class="special"name="password">
-  <button class="btn">login</button>
-  <script src="callbacks.js"></script>
+  <nav class="nav">
+    <div>
+      <img src="profile.jpg" class="logo" alt="profile picture">
+      <h2 class="logo-tag">Generate.io</h2>
+    </div>
+    <div>
+      <button class="btn">Generate</button>
+    </div>
+  </nav>
+  <section>
+    <div class="hero-div">
+      <div>
+        <h1 class = "hero-header">Welcome User!</h1>
+        <p class = hero-text>Generate your own ranom user now</p>
+        <div class = "box">
+          <button class="btn hero">Generate</button>
+        </div>
+      </div>
+    </div>
+    <div class="user-grid"></div>
+  </section>
+  <!-- <script src="callbacks.js"></script>   -->
   <script src="api.js"></script>
 </body>
 </html>

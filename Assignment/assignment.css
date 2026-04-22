@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .score{
     width: 200px;
@@ -15,3 +17,67 @@
     border-radius: 2px;
     border-color: blue;
 }
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.logo-tag{
+    display:inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    font-weight: 300;
+    vertical-align: middle;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 10px;
+    border:  none;
+    background-color: #E60023;
+    color: white;
+    text-align: center;
+    transition: all ease-in-out 0.2s;
+}
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #e93c56;
+}
+
+.hero-div{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-header{
+    font-size: 50px;
+    padding: 2px;
+    color: #E60023;
+    font-weight: 400;
+}
+.hero-text{
+    font-size: 18px;
+    text-align: center;
+}
+.hero{
+    margin: auto;
+}
+.box{
+    display: flex;
+    padding-top: 10px;
+}
+
